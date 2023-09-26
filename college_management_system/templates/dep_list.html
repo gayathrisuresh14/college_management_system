@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+{% block content %}
+<body class="bg-light">
+
+<div class="container p-5">
+
+    <h2 class="text-center mb-5">
+        Department
+    </h2>
+
+    <div class="row">
+
+        {% for dep in dep_list %}
+
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 23rem;">
+                <a href="{% url 'dep_view' dep.id %}">
+                <img src="{{ dep.dep_image }}" class="card-img-top" alt="...">
+</a>
+
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+{% endblock content %}

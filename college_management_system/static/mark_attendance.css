@@ -1,0 +1,47 @@
+body{
+   padding: 0;
+   margin: 0;
+   background: #d5d9e0;
+
+}
+
+
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+form{
+    background: #fff;
+    width: 30rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+label{
+   margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"]{
+   width: 100%;
+   padding: 5px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+
+}
+
+select{
+   width: 100%;
+   padding: 5px;
+   border-radius: 4px;
+}
+
+
+
+button:hover{
+    background-color: rgba(0, 0, 1, 1);
+}

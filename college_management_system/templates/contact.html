@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+{% block content %}
+<body>
+
+<div class="container-fluid">
+    <div class="row p-5 bg-light">
+        <h1 class="text-center mb-3">Contact Us</h1>
+    </div>
+
+        <div class="row px-5 pt-5">
+            <div class="col-10 col-md-6">
+                <img class="img-fluid" src="/static/images/contact.jpg" alt="...">
+            </div>
+
+        <div class="col-10 col-md-6">
+            <form>
+                <div class="form-row">
+
+                    <div class="form-group pt-3">
+
+                        <input name="name" type="name" class="form-control" placeholder="Full Name">
+                      </div>
+
+                  <div class="form-group pt-3">
+
+                    <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+
+                </div>
+
+                <div class="form-group pt-3">
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Type your message here"></textarea>
+                  </div>
+
+
+                  <button type="submit" onclick="alert('Message sent')" class="btn btn-dark mt-5 w-100" >Send</button>
+              </form>
+        </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+{% endblock content %}

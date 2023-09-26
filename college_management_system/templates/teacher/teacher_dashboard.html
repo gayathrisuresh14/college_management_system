@@ -1,0 +1,82 @@
+{% extends 'dashboard.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Teacher Dashboard</title>
+</head>
+<body>
+
+<header>
+    <div class="container m-5">
+        <div class="row p-3" style="background-color: #354f52; border-radius: 200px;">
+            <div class="col-md-12">
+                <h3 class="text-white text-center">Welcome, {{ teacher.name }}</h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!--    tiles          -->
+<section>
+    <div class="row ms-5">
+        <div class="col-md-6 d-flex justify-content-end">
+            <div class="d-flex align-items-center justify-content-center"
+                 style="width: 25rem; height: 10rem; background-color: #52796f; border-radius: 20px;">
+                <a href="{% url 'teacher_profile' %}" class="text-white" style="text-decoration: none;"><h4>Profile</h4>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="d-flex align-items-center justify-content-center"
+                 style="width: 25rem; height: 10rem; background-color: #74a059; border-radius: 20px;">
+                <a href="{% url 'teacher_subject_list' %}" class="text-white" style="text-decoration: none;"><h4>
+                    Subjects</h4></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row ms-5 mt-3">
+        <div class="col-md-6 d-flex justify-content-end">
+            <div class="d-flex align-items-center justify-content-center"
+                 style="width: 25rem; height: 10rem; background-color: #84a98c; border-radius: 20px;">
+                <a href="{% url 'mark_attendance' %}" class="text-white" style="text-decoration: none;"><h4>
+                    Mark Attendance</h4></a>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="d-flex align-items-center justify-content-center"
+                 style="width: 25rem; height: 10rem; background-color: #606c38; border-radius: 20px;">
+                <a href="{% url 'add-marks' %}" class="text-white" style="text-decoration: none;"><h4>Add Mark</h4>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+{% endblock content %}
